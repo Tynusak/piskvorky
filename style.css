@@ -18,21 +18,27 @@ body {
   justify-content: flex-start;
   align-items: stretch;
 }
+
+.picture {
+  flex-shrink: 0;
+}
+
 .text {
   background-color: #283e50;
-  padding: auto;
 }
 
 button {
   color: #ffffff;
   width: 640px;
   height: 50px;
+  border: 0px;
 }
 .rules {
   background-color: #1fcca4;
 }
 .play {
   background-color: #0197f6;
+  border-top: 1px solid #283e50;
 }
 .rules:hover {
   background-color: #1cbb96;
