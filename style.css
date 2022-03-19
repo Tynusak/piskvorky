@@ -1,24 +1,32 @@
-html {
+body {
   color: #ffffff;
   background-image: linear-gradient(#615dad, #ffc8da);
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
-.content {
+* {
+  box-sizing: border-box;
+}
+
+.intro {
   width: 640px;
   text-align: center;
-  margin-top: 50px;
-  margin-left: 25%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: stretch;
 }
 .text {
   background-color: #283e50;
+  padding: auto;
 }
 
 button {
   color: #ffffff;
+  width: 640px;
+  height: 50px;
 }
 .rules {
   background-color: #1fcca4;
