@@ -23,12 +23,18 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .picture {
   flex-shrink: 0;
+}
+img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .text {
@@ -47,15 +53,16 @@ button {
   color: #ffffff;
   font-size: 1em;
   width: 640px;
-  height: 2.5em;
+  height: 3em;
   border: 0px;
 }
 .rules {
   background-color: #1fcca4;
+  border-top: 1px solid #283e50;
+  border-bottom: 1px solid #283e50;
 }
 .play {
   background-color: #0197f6;
-  border-top: 1px solid #283e50;
 }
 .rules:hover {
   background-color: #1cbb96;
