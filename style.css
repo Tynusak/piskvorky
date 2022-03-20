@@ -42,11 +42,12 @@ img {
 }
 h1 {
   font-family: Lobster;
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 p {
-  padding: 10px;
+  padding: 0px 30px 50px 30px;
+  line-height: 150%;
 }
 
 button {
