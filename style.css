@@ -17,33 +17,34 @@ body {
   box-sizing: border-box;
 }
 
-.intro {
-  width: 33vw;
+.container {
+  width: 95vw;
   background-color: #283e50;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 200px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 }
 
 .picture {
   flex-shrink: 0;
 }
 img {
-  width: 33vw;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  width: 95vw;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 }
 
 .text {
-  width: 33vw;
+  width: 95vw;
   background-color: #283e50;
 }
+
 h1 {
   font-family: Lobster;
   font-size: 3em;
@@ -53,15 +54,25 @@ p {
   padding: 0px 30px 50px 30px;
   line-height: 150%;
 }
+ol {
+  text-align: left;
+  margin: 8%;
+
+  line-height: 150%;
+}
+
+li {
+  margin-bottom: 5%;
+}
 
 button {
   color: #ffffff;
   font-size: 1em;
-  width: 33vw;
+  width: 95vw;
   height: 3em;
   border: 0px;
 }
-.rules {
+.rules_intro {
   background-color: #1fcca4;
   border-top: 1px solid #283e50;
   border-bottom: 1px solid #283e50;
@@ -69,7 +80,7 @@ button {
 .play {
   background-color: #0197f6;
 }
-.rules:hover {
+.rules_intro:hover {
   background-color: #1cbb96;
   cursor: pointer;
 }

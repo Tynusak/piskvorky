@@ -8,6 +8,7 @@ Křížky a kolečka se umisťují dovnitř políček na hrací ploše.
 Hráč, který umístí pět svých symbolů do jedné řady, vyhrává.
 Výherní kombinací se rozumí pět symbolů ve směru vodorovném, svislém nebo šikmém. Mezi pěti symboly tvořícími výherní kombinaci nesmí být žádné prázdné pole ani pole obsazené soupeřovým symbolem.
 Pokud hráči zaplní celou desku, aniž by někdo umístil pět svých symbolů do jedné řady, hra končí remízou.
+
 Situace po třech tazích - na tahu je hráč s kolečky
 Situace po čtyřech tazích
 Výherní pozice hráče s kolečky
