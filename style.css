@@ -8,7 +8,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: sans-serif;
-  font-size: 17px;
+  font-size: 1em;
   display: flex;
   justify-content: center;
 }
@@ -48,6 +48,11 @@ figcaption {
   width: 100%;
   background-color: #283e50;
 }
+.icon {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
 
 h1 {
   font-family: Lobster;
@@ -56,7 +61,7 @@ h1 {
 }
 
 p {
-  padding: 0px 30px 50px 30px;
+  padding: 5%;
   line-height: 150%;
 }
 ol {
@@ -67,7 +72,7 @@ ol {
 }
 
 li {
-  margin-bottom: 5%;
+  margin-bottom: 1em;
 }
 
 button {
