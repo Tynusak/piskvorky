@@ -24,20 +24,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: stretch;
   margin-top: 50px;
   margin-bottom: 200px;
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+}
 .picture {
   flex-shrink: 0;
-  border-top-left-radius: 3%;
-  border-top-right-radius: 3%;
-}
-img {
   width: 100%;
+}
+figure {
+  margin-left: 4%;
+  margin-right: 4%;
 }
 figcaption {
   font-style: italic;
@@ -67,12 +70,15 @@ p {
 ol {
   text-align: left;
   margin: 8%;
-
   line-height: 150%;
 }
 
 li {
   margin-bottom: 1em;
+}
+.rules_all_pictures {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 button {
@@ -98,3 +104,18 @@ button {
   background-color: #0090e9;
   cursor: pointer;
 }
+
+/* @media (min-width: 700px) {
+  .container {
+    width: 90vw;
+  }
+
+  figure {
+    width: 50%;
+  }
+}
+@media (min-width: 950px) {
+  .container {
+    width: 50vw;
+  }
+} */
