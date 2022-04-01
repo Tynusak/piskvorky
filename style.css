@@ -76,10 +76,6 @@ ol {
 li {
   margin-bottom: 1em;
 }
-.rules_all_pictures {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 button {
   color: #ffffff;
@@ -104,18 +100,22 @@ button {
   background-color: #0090e9;
   cursor: pointer;
 }
+.rules_all_pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-/* @media (min-width: 700px) {
+@media (min-width: 700px) {
   .container {
     width: 90vw;
   }
 
   figure {
-    width: 50%;
+    width: 42%;
   }
 }
 @media (min-width: 950px) {
   .container {
     width: 50vw;
   }
-} */
+}
