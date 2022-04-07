@@ -26,13 +26,12 @@ body {
   justify-content: flex-start;
   margin-top: 50px;
   margin-bottom: 200px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
   overflow: hidden;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 .picture {
   flex-shrink: 0;
