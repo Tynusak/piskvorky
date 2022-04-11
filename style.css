@@ -29,6 +29,27 @@ body {
   border-radius: 5px 5px 0px 0px;
   overflow: hidden;
 }
+.container__game {
+  width: 95vw;
+  max-width: 80vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headline {
+  width: 100%;
+}
+.panel {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
 
 img {
   width: 100%;
@@ -53,13 +74,16 @@ figcaption {
 .icon {
   width: 1em;
   height: 1em;
-  filter: invert(100%);
+}
+.icon--rules {
+  filter: invert();
 }
 
 h1 {
   font-family: Lobster;
   font-size: 3em;
   font-weight: 100;
+  text-align: center;
 }
 
 p {
@@ -90,6 +114,18 @@ button {
 }
 .play {
   background-color: #0197f6;
+}
+.rules_intro--game {
+  background-color: #1fcca4;
+  width: 2em;
+  height: 2em;
+  margin: 3px;
+}
+.play--game {
+  background-color: #0197f6;
+  width: 2em;
+  height: 2em;
+  margin: 3px;
 }
 .rules_intro:hover {
   background-color: #1cbb96;
