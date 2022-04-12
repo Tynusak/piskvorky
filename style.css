@@ -99,33 +99,57 @@ ol {
 li {
   margin-bottom: 1em;
 }
-
 button {
+  border: 1px solid #283e50;
+}
+
+.game__field {
+  margin-top: 5px;
+  width: 100%;
+  height: 80vmin;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game__field > button {
+  background-color: rgb(183, 171, 212);
+  width: 10%;
+  height: 10%;
+  aspect-ratio: 1/1;
+}
+.rules_intro {
+  border: 0px;
   color: #ffffff;
   font-size: 1em;
   width: 100%;
   height: 3em;
-  border: 0px;
-}
-.rules_intro {
   background-color: #1fcca4;
   border-top: 1px solid #283e50;
   border-bottom: 1px solid #283e50;
 }
 .play {
+  border: 0px;
+  color: #ffffff;
+  font-size: 1em;
+  width: 100%;
+  height: 3em;
   background-color: #0197f6;
 }
 .rules_intro--game {
   background-color: #1fcca4;
   width: 2em;
   height: 2em;
-  margin: 3px;
+  margin-right: 3px;
+  border: 0px;
+  border-radius: 2px;
 }
 .play--game {
   background-color: #0197f6;
   width: 2em;
   height: 2em;
-  margin: 3px;
+  border: 0px;
+  margin-left: 3px;
+  border-radius: 2px;
 }
 .rules_intro:hover {
   background-color: #1cbb96;
