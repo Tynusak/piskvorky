@@ -113,17 +113,30 @@ button {
   flex-wrap: wrap;
 }
 
-.game__field > button {
+.empty {
   background-color: rgb(183, 171, 212);
   width: 10%;
   height: 10%;
   aspect-ratio: 1/1;
 }
-.game__field > button:hover,
-.game__field > button:focus {
+.empty:hover,
+.empty:focus {
   background-color: rgb(201, 187, 212);
   cursor: pointer;
 }
+
+.game__field--circle {
+  background-image: url('images/circle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.game__field--cross {
+  background-image: url('images/cross.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .rules_intro {
   border: 0px;
   color: #ffffff;
