@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('.empty');
 const players = ['circle', 'cross'];
 let a = 0;
 
