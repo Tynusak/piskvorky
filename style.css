@@ -118,23 +118,27 @@ button {
   width: 10%;
   height: 10%;
   aspect-ratio: 1/1;
+  background-size: 1%;
 }
 .empty:hover,
 .empty:focus {
   background-color: rgb(201, 187, 212);
   cursor: pointer;
 }
+.game__field--circle,
+.game__field--cross {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  transition: background-size 150ms;
+}
 
 .game__field--circle {
   background-image: url('images/circle.svg');
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .game__field--cross {
   background-image: url('images/cross.svg');
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .rules_intro {
