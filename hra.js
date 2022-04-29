@@ -1,6 +1,30 @@
 const buttons = document.querySelectorAll('.empty');
 const players = ['circle', 'cross'];
 let a = 0;
+const fieldSize = 10;
+
+const getSymbol = (evt_target) => {
+  if (evt_target.classList.contains('game__field--circle')) {
+    return 'circle';
+  } else if (evt_target.classList.contains('game__field--cross')) {
+    return 'cross';
+  }
+};
+
+const getField = (row, column) => {
+  return buttons[row * fieldSize + column];
+};
+
+const getPosition = (evt_target) => {
+  let buttonIndex = 0;
+  while (buttonIndex < buttons.length && evt_target !== buttons[buttonIndex]) {
+    buttonIndex++;
+  }
+  return {
+    row: Math.floor(buttonIndex / fieldSize),
+    column: buttonIndex % fieldSize,
+  };
+};
 
 const move = (evt) => {
   evt.target.classList.add(`game__field--${players[a]}`);
