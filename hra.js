@@ -1,7 +1,9 @@
 const buttons = document.querySelectorAll('.empty');
 const players = ['circle', 'cross'];
+const players_czech = ['kolečko', 'křížek'];
 let a = 0;
 const fieldSize = 10;
+const symbolsToWin = 5;
 
 const getSymbol = (evt_target) => {
   if (evt_target.classList.contains('game__field--circle')) {
@@ -26,10 +28,65 @@ const getPosition = (evt_target) => {
   };
 };
 
+const isWinningMove = (field) => {
+  const origin = getPosition(field);
+  const symbol = getSymbol(field);
+
+  let i;
+
+  let inRow = 1;
+  i = origin.column;
+  while (i > 0 && symbol === getSymbol(getField(origin.row, i - 1))) {
+    inRow++;
+    i--;
+  }
+
+  // Koukni doprava
+  i = origin.column;
+  while (
+    i < fieldSize - 1 &&
+    symbol === getSymbol(getField(origin.row, i + 1))
+  ) {
+    inRow++;
+    i++;
+  }
+
+  if (inRow >= symbolsToWin) {
+    return true;
+  }
+
+  let inColumn = 1;
+  // Koukni nahoru
+  i = origin.row;
+  while (i > 0 && symbol === getSymbol(getField(i - 1, origin.column))) {
+    inColumn++;
+    i--;
+  }
+
+  // Koukni dolu
+  i = origin.row;
+  while (
+    i < fieldSize - 1 &&
+    symbol === getSymbol(getField(i + 1, origin.column))
+  ) {
+    inColumn++;
+    i++;
+  }
+
+  if (inColumn >= symbolsToWin) {
+    return true;
+  }
+
+  return false;
+};
+
 const move = (evt) => {
   evt.target.classList.add(`game__field--${players[a]}`);
+  isWinningMove(evt.target);
+  if (isWinningMove(evt.target) === true) {
+    alert(`Vyhrál ${players_czech[a]}`);
+  }
   evt.target.disabled = true;
-
   a += 1;
   if (a === players.length) {
     a = 0;
