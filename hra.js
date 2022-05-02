@@ -83,8 +83,10 @@ const isWinningMove = (field) => {
 const move = (evt) => {
   evt.target.classList.add(`game__field--${players[a]}`);
   isWinningMove(evt.target);
-  if (isWinningMove(evt.target) === true) {
-    alert(`Vyhrál ${players_czech[a]}`);
+  if (isWinningMove(evt.target)) {
+    if (window.confirm(`Vyhrál ${players_czech[a]}`)) {
+      location.reload();
+    }
   }
   evt.target.disabled = true;
   a += 1;
