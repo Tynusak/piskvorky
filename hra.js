@@ -33,6 +33,7 @@ const isWinningMove = (field) => {
   const symbol = getSymbol(field);
 
   let i;
+  let j;
 
   let inRow = 1;
   i = origin.column;
@@ -74,6 +75,58 @@ const isWinningMove = (field) => {
   }
 
   if (inColumn >= symbolsToWin) {
+    return true;
+  }
+  //Koukni doleva nahoru
+  let inDiagonal1 = 1;
+  i = origin.row;
+  j = origin.column;
+  while (i > 0 && j > 0 && symbol === getSymbol(getField(i - 1, j - 1))) {
+    inDiagonal1++;
+    i--;
+    j--;
+  }
+  //Koukni doprava dolů
+  i = origin.row;
+  j = origin.column;
+  while (
+    i < fieldSize - 1 &&
+    j < fieldSize - 1 &&
+    symbol === getSymbol(getField(i + 1, j + 1))
+  ) {
+    inDiagonal1++;
+    i++;
+    j++;
+  }
+  if (inDiagonal1 >= symbolsToWin) {
+    return true;
+  }
+  //Koukni doprava nahoru
+  let inDiagonal2 = 1;
+  i = origin.row;
+  j = origin.column;
+  while (
+    i > 0 &&
+    j < fieldSize - 1 &&
+    symbol === getSymbol(getField(i - 1, j + 1))
+  ) {
+    inDiagonal2++;
+    i--;
+    j++;
+  }
+  //Koukni doleva dolů
+  i = origin.row;
+  j = origin.column;
+  while (
+    i < fieldSize - 1 &&
+    j > 0 &&
+    symbol === getSymbol(getField(i + 1, j - 1))
+  ) {
+    inDiagonal2++;
+    i++;
+    j--;
+  }
+  if (inDiagonal2 >= symbolsToWin) {
     return true;
   }
 
